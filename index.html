@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../ASM/header.css">
+    <link rel="stylesheet" href="../ASM/footer.css">
+    <link rel="stylesheet" href="../ASM/items.css">
+    <link rel="stylesheet" href="../ASM/anime.css">
+    <link rel="stylesheet" href="../ASM/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="../ASM/psc.js"></script>
+    <script src="../ASM/showpsc.js"></script>
+    <script src="../ASM/anime.js"></script>
+    <script src="../ASM/showanime.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-banner">
+            <header class="header--container">
+                <div class="header--logo"></div>
+                <div class="widget_search">
+                    <form action="tim-kiem" method="GET" id="form-search">
+                        <div>
+                            <input type="text" name="keyword" placeholder="Tìm: tên anime ...">
+                        </div>
+                    </form>
+                </div>
+                <div class="widget_user_header">
+                    <a href="#" style="padding-left: 20px;"><button>Đăng ký</button></a>
+                    <a href="#"><button>Đăng nhập</button></a>
+                    <a href="#" id="facebook"><button>Facebook</button></a>
+                </div>
+            </header>
+            <nav class="h-menu">
+                <div class="h-menu--container">
+                    <a href="">HOME</a>
+                    <a href="">ANIME MÙA</a>
+                    <a href="">THỂ LOẠI</a>
+                    <a href="">NHÓM DỊCH</a>
+                    <a href="">LỌAI PHIM</a>
+                    <a href="">LỌC PHIM</a>
+                    <a href="">BẢNG XẾP HẠNG</a>
+                    <a href="">LỊCH CHIẾU PHIM</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <section class="quangcao">
+            <a href="https://www.vt-8888.com/signup?referralCode=3WAV8BUE"><img width="1139px" height="80px"
+                    src="https://animetvn.com/ads/img/Top-banner-pc-001.gif" alt="Nhà cái VT999"></a>
+            <a href="https://www.i9bet5.com/?uagt=vip356&amp;path=signup"><img width="1139px" height="80px"
+                    src="https://animetvn.com/ads/img/top-banner-100.gif" alt="Nhà cái i9bet"></a>
+        </section>
+        <section class="layer-1">
+            <a href="">
+                <div class="layer-1-img">
+
+                </div>
+            </a>
+            <a></a>
+            <a href="/pts.html" class="button-next"></a>
+            <a href="/pts.html" class="button-prev"></a>
+            <div class="layer-1-content">
+                <h3>Shokei Shoujo no Virgin Road</h3>
+                <p class="time">09/12 Tập</p>
+                <p class="txt">The Lost Ones là những người lang thang đến đây từ một thế giới xa xôi được gọi
+                    là “Nhật Bản”. Không ai biết bằng cách nào hoặc tại sao họ rời khỏi nơi quê nhà của họ.
+                    Điều chắc chắn duy nhất là chúng mang lại tai họa và tai họa. Nhiệm vụ tiêu diệt chúng
+                    thuộc về Menou, một Executioner trẻ tuổi. Khi cô ấy gặp Akari, có vẻ như chỉ là một công
+                    việc khác … cho đến khi cô ấy phát hiện ra rằng không th...</p>
+            </div>
+        </section>
+        <section class="huongdan-container">
+            <div
+                style="background-color: #000000;height: 50px;text-align: center;box-sizing: border-box;padding: 10px;">
+                <div class="huongdan">
+                    <span class="c1">Hướng dẫn tìm kiếm phim trên trang Web Google: </span><span class="c2"> Tên phim +
+                        Anime98</span>
+                </div>
+            </div>
+        </section>
+        <section class="phim-sapchieu-container">
+            <div class="phim">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star-1"></span>
+                <span class="name-content">Phim Sắp Chiếu</span>
+                <span class="star-2"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </div>
+            <div class="phim-sapchieu-items" id="psc">
+                <a href="/pts.html" class="button-next"></a>
+                <a href="/pts.html" class="button-prev"></a>
+            </div>
+            <script>
+                var handle = document.getElementById('psc');
+
+                for (let i in itemspsc) {
+                    let p = new Itemspsc(itemspsc[i].id, itemspsc[i].viewed, itemspsc[i].year, itemspsc[i].day, itemspsc[i].name, itemspsc[i].img);
+                    p.show(handle);
+                }
+
+            </script>
+        </section>
+        <section class="anime">
+            <div class="phim">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star-1"></span>
+                <span class="name-content">Anime</span>
+                <span class="star-2"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+            </div>
+            <div id="anime" class="anime-list-items">
+
+            </div>
+            <script>
+                var anime = document.getElementById('anime');
+
+                for (let i in itemsanime) {
+                    let p = new Itemsanime(itemsanime[i].id, itemsanime[i].viewed, itemsanime[i].tap,itemsanime[i].year, itemsanime[i].name, itemsanime[i].img);
+                    p.show(anime);
+                }
+            </script>
+        </section>
+        <section class="waifu-bxh">
+            <div style="display: flex;justify-content: space-between;">
+                <div class="phim" style="width: 67%;border-radius: 0 5px 5px 0;" >
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star-1"></span>
+                    <span class="name-content">~Waifu~</span>
+                    <span class="star-2"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+                <div class="phim" style="width:33%;background-color: #ffaa00;border-radius:5px 0 0 5px;" >
+                    
+                    
+                    
+                    <span class="star"></span>
+                    <span class="name-content">Top Xếp Hạng</span>
+                    <span class="star"></span>
+                    
+                    
+                </div>
+            </div> 
+            <div class="waifu-bxh-container">
+                <div id="waifu" class="waifu-list">
+                    <div class="waifu-1">
+                        <div class="waifu-1-img"></div>
+                        <div class="waifu-content">
+                            <strong style="color: #00c9c7;font-size: 20px;">Kaguya Shinomiya</strong>
+                            <p style="font-weight: 399">
+                                (四宮 かぐや(しのみや かぐや), Shinomiya Kaguya)
+                                is the main female protagonist of Kaguya-sama: Love Is War.
+                                 She is a student at Shuchi'in senior high school
+                                  and the vice president of the student council in the academy.</p>
+                             
+    
+                        </div>
+                    </div>
+                    <div class="waifu-2">
+                        <div class="waifu-2-img"></div>
+                        <div class="waifu-content">
+                            <strong style="color: #ffaa00;font-size: 20px;">
+                                Violet Evergarden</strong><p style="font-weight: 399">(ヴァイオレット・エヴァーガーデン, Vaioretto Evāgāden?)
+                                    is the protagonist of the Violet Evergarden series. Violet is a former 
+                                    soldier who was enlisted in the Leidenschaftlich army and fought in the war,
+                                     where she was treated as nothing more than a weapon. Violet became an Auto 
+                                     Memories Doll at the CH Postal Company after the war.</p> 
+                              
+                        </div>
+                    </div>
+                    <div class="waifu-3">
+                        <div class="waifu-3-img"></div>
+                        <div class="waifu-content">
+                            <strong style="color: #f6c1bb;font-size: 20px;">Neko Maid</strong>
+                            <p style="font-weight: 399">
+                                The Neko Maid (aka Saiko Meem) is one of the main characters of Saiko-verse.
+                                The Neko Maid has the final say on all lore in the Saiko-verse.
+                                The Neko Maid lives in, and is the current president of, the country
+                                 of Molvania, which is a land untouched by modern dentistry.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="bxh" class="bxh">
+                    <div class="top">
+                        <a href="">
+                            <div><span class="number-top" style="background-color: red">1</span></div>
+                            
+                            <img src="../img/top1.jpg" alt="" class="bxh-img">
+                            <h3 class="bxh-title">
+                                One Piece
+                            </h3>
+                        </a>
+                        <div>
+                            <span class="bxh-tap">1020/??? Tập</span>
+                        </div>
+                        <div>
+                            <span class="bxh-viewed"><span style="color: #f1592a;">Lượt xem:</span> 10,136</span>
+                        </div>
+                        
+                    </div>
+                    <div class="top">
+                        <a href="">
+                            <div><span class="number-top" style="background-color: #00c9c7">2</span></div>
+                            
+                            <img src="../img/top1.jpg" alt="" class="bxh-img">
+                            <h3 class="bxh-title">
+                                One Piece
+                            </h3>
+                        </a>
+                        <div>
+                            <span class="bxh-tap">1020/??? Tập</span>
+                        </div>
+                        <div>
+                            <span class="bxh-viewed"><span style="color: #f1592a;">Lượt xem:</span> 10,136</span>
+                        </div>
+                    </div>
+                    <div class="top">
+                        <a href="">
+                            <div><span class="number-top" style="background-color: #278052">3</span></div>
+                            
+                            <img src="../img/top1.jpg" alt="" class="bxh-img">
+                            <h3 class="bxh-title">
+                                One Piece
+                            </h3>
+                        </a>
+                        <div>
+                            <span class="bxh-tap">1020/??? Tập</span>
+                        </div>
+                        <div>
+                            <span class="bxh-viewed"><span style="color: #f1592a;">Lượt xem:</span> 10,136</span>
+                        </div>
+                        
+                    </div>
+                    <div class="top">
+                        <a href="">
+                            <div><span class="number-top"style="background-color: #f1592a">4</span></div>
+                            
+                            <img src="../img/top1.jpg" alt="" class="bxh-img">
+                            <h3 class="bxh-title">
+                                One Piece
+                            </h3>
+                        </a>
+                        <div>
+                            <span class="bxh-tap">1020/??? Tập</span>
+                        </div>
+                        <div>
+                            <span class="bxh-viewed"><span style="color: #f1592a;">Lượt xem:</span> 10,136</span>
+                        </div>
+                        
+                    </div>
+                    <div class="top">
+                        <a href="">
+                            <div><span class="number-top">5</span></div>
+                            
+                            <img src="../img/top1.jpg" alt="" class="bxh-img">
+                            <h3 class="bxh-title">
+                                One Piece
+                            </h3>
+                        </a>
+                        <div>
+                            <span class="bxh-tap">1020/??? Tập</span>
+                        </div>
+                        <div>
+                            <span class="bxh-viewed"><span style="color: #f1592a;">Lượt xem:</span> 10,136</span>
+                        </div>
+                        
+                    </div>
+                    
+    
+                </div>
+            </div>
+            
+        </section>
+        <footer>
+            <div class="thontin" style="display: flex;justify-content: space-between;">
+                <div class="gioithieu">
+                    <h3 style="font-style:italic">GIỚI THIỆU</h3>
+                    <p><strong style="color: #00c9c7;font-size: 20px;">ANIME98.COM</strong> - Trang web xem Anime HD trực tuyến.</p>
+                    <p>Kho Anime phong phú nhiều thể loại, cập nhật mới liên tục mỗi ngày.</p>
+                    <p>Mọi dữ liệu trên <strong style="color: #00c9c7;font-size: 20px;">ANIME98.COM</strong> đều được tổng hợp và re-upload từ internet.</p>
+                    <p>Xem tốt nhất với trình duyệt Mozilla Firefox & Google Chrome.</p>
+                </div>
+                <div class="lienket">
+                    <h3 style="font-style:italic">LIÊN KẾT</h3>
+                    <p>Các Items phim được code bằng DOM</p>
+                    <p>Web được dựa trên ý tưởng của ANIMETVN và 1 phần của bản thân</p>
+                    <p>Vẫn đang trong quá trình hoàn thiện web</p>
+                    <p></p>
+                </div>
+            </div>
+            
+
+        </footer>
+        
+
+
+
+    </div>
+</body>
+
+</html>

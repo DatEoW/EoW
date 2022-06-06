@@ -1,0 +1,194 @@
+.layer-1-img{
+    background-image: url('../img/banner0.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    
+    
+}
+.layer-1{
+    position: relative;
+    top: auto;
+}
+.button-next{
+    background-image: url('../img/left-arrow.png');
+    background-repeat: no-repeat;
+    height: 110px;
+    position: absolute;
+    top: 36%;
+    width: 39px;
+    left: 0px;
+    z-index: 1;
+    opacity: .8;
+}
+.button-prev{
+    background-image: url('../img/right-arrow.png');
+    height: 110px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 36%;
+    width: 39px;
+    right: 0px;
+    z-index: 1;
+    opacity: .8;
+    
+}
+.layer-1-content .time{
+    color: #f1592a;
+    font-weight: 700;
+    font-size: 15px;
+}
+.layer-1-content .txt{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    max-height: 70px;
+    overflow: hidden;
+    text-align: center;
+    max-width: 100%;
+}
+.layer-1-content h3{
+    color: #00c9c7;
+    font-size: 18px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 0;
+}
+.layer-1-content{
+    background: rgba(0,0,0,.6);
+    border-radius: 15px;
+    margin: 10px 10px 10px 0;
+    padding: 14px 12px 9px 14px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 200px;
+}
+.huongdan{
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ffbc00;
+    line-height: 30px;
+    
+    
+}
+.c1{
+    color: #ffaa00;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.c2{
+    color: #ff0000;
+    font-size: 15px;
+    font-weight: bold;
+}
+.phim{
+    height:30px;
+    background-color: #00c9c7;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 0 0 0;
+    line-height: 30px;
+    
+}
+.star{
+    background-image: url('../img/start.png');
+    width: 17px;
+    height: 17px;
+    background-size: 20px auto;
+    margin: 5px 10px 10px 10px;
+    
+}
+.star-1{
+    background-image: url('../img/start.png');
+    width: 17px;
+    height: 17px;
+    background-size: 20px auto;
+    margin: 5px 100px 10px 10px;
+    
+}
+.star-2{
+    background-image: url('../img/start.png');
+    width: 17px;
+    height: 17px;
+    background-size: 20px auto;
+    margin: 5px 10px 10px 100px;
+}
+.phim-sapchieu-items{
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    /* flex-wrap: wrap; */
+}
+.psc-img{
+   display: block;
+   border: 2px solid gainsboro;
+    
+}
+.psc-items{
+    position: relative;
+    margin: 10px;
+    
+}
+.psc-viewed{
+    position: absolute;
+    background:url('../img/eye.png') 1px 6.5px no-repeat #278052;
+    bottom: auto;
+    font-size: 11px;
+    left: 2px;
+    padding: 5px 6px 5px 20px;
+    top: 2px;
+    color: white;
+    border-radius: 0 0 10px 0;
+    
+}
+.psc-day{
+    position: absolute;
+    background-color:#ff0000;
+    top: 2px;
+    right: 2px;
+    bottom: auto;
+    font-size: 11px;
+    padding: 5px 5px 5px 6px;
+    border-radius: 0 0 0 10px;
+    color: white;
+}
+.psc-name{
+    width: 153px;
+    background-color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    margin-right: 0;
+    border-radius: 0 0 5px 5px ;
+    text-decoration: none;
+    color: black;
+}
+.psc-a{
+    text-decoration: none;
+}
+.psc-a a{
+    text-decoration: none;
+}
+.psc-year{
+    position: absolute;
+    top:203px;
+    left: 3px;
+    padding: 5px;
+    background-color: #0a62a2;
+    color: white;
+    border-radius: 0 10px 0 0;
+}
